@@ -87,3 +87,24 @@
 .focus-visible\:ring-electric:focus-visible {
   @apply ring-2 ring-electric-500 ring-offset-2 ring-offset-slate-950;
 }
+
+/* Better scaling for high-DPI small laptops */
+@media screen and (min-width: 1280px) and (max-width: 1440px) and (min-resolution: 144dpi) {
+  .hero-responsive {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+/* Improved spacing for laptop screens */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .hero-spacing {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

@@ -7,11 +7,11 @@ import Link from "next/link";
 
 export function CTASection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-electric-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-electric-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 md:w-96 h-64 md:h-96 bg-neon-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -20,7 +20,7 @@ export function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="space-y-8"
+          className="space-y-6 md:space-y-8"
         >
           {/* Badge */}
           <motion.div
@@ -28,9 +28,9 @@ export function CTASection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 text-sm text-slate-300"
+            className="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-slate-300"
           >
-            <MessageCircle className="h-4 w-4 text-electric-500" />
+            <MessageCircle className="h-3 w-3 md:h-4 md:w-4 text-electric-500" />
             <span>Ready to Start Your Project?</span>
           </motion.div>
 
@@ -40,7 +40,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
           >
             Let's Build Something{" "}
             <span className="gradient-text">
@@ -67,16 +67,16 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 w-full max-w-md sm:max-w-none mx-auto"
+            className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4 w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto"
           >
             <Button
-              className="group w-full sm:w-auto min-w-[200px] h-12 px-8 sm:px-12 text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
+              className="group w-full sm:w-auto min-w-[180px] md:min-w-[200px] h-10 md:h-12 px-6 md:px-8 lg:px-12 text-sm md:text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
               asChild
             >
               <Link href="/contact">
-                <Calendar className="mr-2 h-5 w-5" />
+                <Calendar className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                 Book Free Call
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             

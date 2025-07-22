@@ -36,7 +36,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24">
+    <section className="py-16 md:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <motion.div
@@ -44,9 +44,9 @@ export function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12 md:mb-16 px-4"
+          className="text-center mb-10 md:mb-12 lg:mb-16 px-4"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
             What Our <span className="gradient-text">Clients Say</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
