@@ -54,7 +54,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed px-4"
           >
             Ready to transform your ideas into a powerful digital solution? 
             Book a free consultation call and let's discuss how we can help 
@@ -67,9 +67,10 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >            <Button
-              className="group min-w-[200px] h-12 px-12 text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 w-full max-w-md sm:max-w-none mx-auto"
+          >
+            <Button
+              className="group w-full sm:w-auto min-w-[200px] h-12 px-8 sm:px-12 text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
               asChild
             >
               <Link href="/contact">

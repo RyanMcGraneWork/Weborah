@@ -10,8 +10,8 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "CEO at TechStart",
     company: "TechStart Inc.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b37c?w=100&h=100&fit=crop&crop=face",
-    content: "Webora transformed our vision into a stunning reality. Their attention to detail and technical expertise is unmatched. Our new platform has increased user engagement by 300%.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    content: "Weborah transformed our vision into a stunning reality. Their attention to detail and technical expertise is unmatched. Our new platform has increased user engagement by 300%.",
     rating: 5,
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     role: "Founder",
     company: "InnovateHub",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    content: "Working with Webora was a game-changer for our business. They delivered a scalable solution that perfectly matches our needs. The team's professionalism is outstanding.",
+    content: "Working with Weborah was a game-changer for our business. They delivered a scalable solution that perfectly matches our needs. The team's professionalism is outstanding.",
     rating: 5,
   },
   {
@@ -29,7 +29,7 @@ const testimonials = [
     role: "Product Manager",
     company: "DataFlow Systems",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-    content: "The quality of work and speed of delivery exceeded our expectations. Webora's modern approach to web development helped us launch 2 months ahead of schedule.",
+    content: "The quality of work and speed of delivery exceeded our expectations. Weborah's modern approach to web development helped us launch 2 months ahead of schedule.",
     rating: 5,
   },
 ];
@@ -44,19 +44,19 @@ export function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16 px-4"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             What Our <span className="gradient-text">Clients Say</span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say 
-            about working with Webora.
+            about working with Weborah.
           </p>
         </motion.div>
 
         {/* Testimonials grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
@@ -141,7 +141,7 @@ export function TestimonialsSection() {
               ))}
             </div>
             <span className="text-slate-300 text-sm">
-              Join 50+ happy clients who trust Webora
+              Join 50+ happy clients who trust Weborah
             </span>
           </div>
         </motion.div>

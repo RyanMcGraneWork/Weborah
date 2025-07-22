@@ -73,7 +73,7 @@ export function Footer() {
             >
               <Mail className="h-4 w-4" />
               <a 
-                href="mailto:ryan@weborah.com"
+                href="mailto:ryan@weborah.com?subject=Project%20Inquiry&body=Hi%20Ryan,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20a%20project%20with%20Weborah.%0D%0A%0D%0ABest%20regards"
                 className="hover:text-electric-500 transition-colors"
               >
                 ryan@weborah.com

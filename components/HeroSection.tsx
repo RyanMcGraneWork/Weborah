@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-electric-500/10 rounded-full blur-3xl animate-pulse" />
@@ -20,17 +20,17 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-8"
+          className="space-y-6 md:space-y-8"
         >
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 text-sm text-slate-300"
+            className="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-3 py-2 md:px-4 md:py-2 text-xs md:text-sm text-slate-300"
           >
-            <Sparkles className="h-4 w-4 text-electric-500" />
-            <span>Modern Web Development Agency</span>
+            <Sparkles className="h-3 w-3 md:h-4 md:w-4 text-electric-500" />
+            <span className="font-medium">Modern Web Development Agency</span>
           </motion.div>
 
           {/* Main headline */}
@@ -38,7 +38,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight px-2"
           >
             We Build{" "}
             <span className="gradient-text">
@@ -53,7 +53,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed px-4"
           >
             From concept to deployment, we create stunning, scalable web applications 
             using cutting-edge technologies like Next.js, React, and TypeScript.
@@ -64,9 +64,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >            <Button
-              className="group h-12 px-12 text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 w-full max-w-md sm:max-w-none mx-auto"
+          >
+            <Button
+              className="group w-full sm:w-auto h-12 px-8 sm:px-12 text-base bg-gradient-to-r from-electric-500 to-neon-500 text-white hover:from-electric-600 hover:to-neon-600 shadow-lg animate-gradient"
               asChild
             >
               <Link href="/contact">
@@ -75,7 +76,7 @@ export function HeroSection() {
               </Link>
             </Button>
             <Button
-              className="group h-12 px-12 text-base border border-slate-700 hover:border-electric-500 bg-transparent text-white"
+              className="group w-full sm:w-auto h-12 px-8 sm:px-12 text-base border border-slate-700 hover:border-electric-500 bg-transparent text-white"
               asChild
             >
               <Link href="/projects">
